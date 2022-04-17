@@ -6,24 +6,24 @@ const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
     title: "Deep Learning Engineer",
-    cardImage: "assets/images/experience-page/images.jfif", 
+    cardImage: "assets/images/experience-page/dlision.jfif", 
     place: "DLision",
     time: "(July, 2020 - present)",
     desp: "<li>Actively involved in the entire pipeline of vision application from data cleaning and preparation through to model training on GCP and Determined and deployment over Nvidia’s Triton inference server.</li> <li> Working on various tools such as OpenCV, Caffe, Pytorch and Keras and doing Data Analysis and Optimization using Pandas, Numba, Scipy and Numpy.</li>",
   },
   {
     title: "Web Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    cardImage: "assets/images/experience-page/HP_Logo.png",
+    place: "HpSoft",
+    time: "(Jan - Aug, 2018)",
+    desp: "<li>Worked with Java Servlets.</li><li>Front-End Development (HTML5, CSS3, SAAS and ReactJs).</li><li>Database Connectivity using SQL Server</li>",
   },
   {
     title: "Software Engineer Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    cardImage: "assets/images/experience-page/PTCL-logo.jpg",
+    place: "PTCL, Hafizabad",
+    time: "(May, 16 - Sep, 16)",
+    desp: "<li>Worked on the ROuter Configuration and Cisco Packet Tracer.</li><li>Designed a software that would help employers to make attendence from the database based on his/her fingerprint and he should be provided with various facilities and options to office related work.</li>",
   },
 ];
 
@@ -61,12 +61,12 @@ document.addEventListener("DOMContentLoaded", showCards2);
 
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
-  {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
-    description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
-  },
+  // {
+  //   title: "GirlScript Summer Of Code 2020",
+  //   cardImage: "assets/images/experience-page/1.jpg",
+  //   description:
+  //     "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+  // },
   {
     title: "StudentCode-in 2020",
     cardImage: "assets/images/experience-page/2.jpg",
