@@ -1,5 +1,4 @@
-# Contribution Guidelines [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/smaranjitghose/awesome-portfolio-websites/issues):
-
+# Contribution Guidelines [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/mhassaanbutt/awesome-portfolio-websites/issues)
 
 <p align="center"><img src="./readme_assets/Contribute.png" width=600></p>
 
@@ -13,12 +12,11 @@ We want to make contributing to this project as easy and as transparent as possi
 
 If you wish to contribute to this project, please raise an issue and wait for the project maintainers to approve it or give feedback before making a change.
 
-This documentation contains a set of guidelines to help you during the contribution process. We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project. 
+This documentation contains a set of guidelines to help you during the contribution process. We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project.
 
 ## Code of Conduct
 
 Make sure to read it here: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-
 
 ## Preliminaries
 
@@ -26,18 +24,18 @@ Make sure to read it here: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - Create a [Github](https://github.com/join) Account 📇
 - Download and install latest stable version of [VS Code](https://code.visualstudio.com/download)
 
-##   A. Setting up the Project
+## A. Setting up the Project
 
-**1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
+**1.**  Fork [this](https://github.com/mhassaanbutt/awesome-portfolio-websites) repository.
 
 <p align="center"><img src="readme_assets\Fork_Repo.gif" width="500" height="200" /></p>
-
 
 **2.**  Clone your forked copy of the project.
 
 ```
 git clone --depth 1 https://github.com/<your_user_name>/awesome-portfolio-websites.git
 ```
+
 <p align="center"><img width=35% src="readme_assets\clone_repo.gif" width="500" height="200" /></p>
 
 **3.** Navigate to the project directory :file_folder: .
@@ -49,7 +47,7 @@ cd awesome-portfolio-websites
 **4.** Add a reference to the original repository.
 
 ```
-git remote add upstream https://github.com/smaranjitghose/awesome-portfolio-websites.git 
+git remote add upstream https://github.com/mhassaanbutt/awesome-portfolio-websites.git 
 ```
 
 **5.** Check the remotes for this repository.
@@ -64,13 +62,13 @@ git remote -v
 git pull upstream master
 ```
 
-- Comment on any existing [issue(s)](https://github.com/smaranjitghose/awesome-portfolio-websites/issues) raised by **project maintainers**. Otherwise raise a [new issue](https://github.com/smaranjitghose/awesome-portfolio-websites/issues/new).
+- Comment on any existing [issue(s)](https://github.com/mhassaanbutt/awesome-portfolio-websites/issues) raised by **project maintainers**. Otherwise raise a [new issue](https://github.com/mhassaanbutt/awesome-portfolio-websites/issues/new).
 
-> ### Guidelines for raising a new issue:
+> ### Guidelines for raising a new issue
 >
 > - Each issue should have an appropriate and short title like "Bug in Experience Page"
 >
-> - Whenever a participant raises an issue, by default it would be assigned to that participant due to obvious reasons. 
+> - Whenever a participant raises an issue, by default it would be assigned to that participant due to obvious reasons.
 >
 > - Be specific about your intended changes/suggestions
 >
@@ -80,7 +78,7 @@ git pull upstream master
 >
 > - Please be patient enough. The project maintainers/mentors would review it as per their schedule. Refrain from putting up comments like "Please check this" ,"Please review this PR" etc.
 >
->-  An issue would be assigned to a participant for a minimum of 1 day and a maximum of 3 days. If the tenure of a particular participant is not over please do not spam the issue thread by writing, " I am interested" etc. You are welcome to do so if the participant has not met the requirements with around 12 hours remaining for their deadline.
+>- An issue would be assigned to a participant for a minimum of 1 day and a maximum of 3 days. If the tenure of a particular participant is not over please do not spam the issue thread by writing, " I am interested" etc. You are welcome to do so if the participant has not met the requirements with around 12 hours remaining for their deadline.
 >
 > - Feel free to suggest your opinions on the already raised issues.
 >
@@ -90,7 +88,7 @@ git pull upstream master
 >
 > - Always keep a note of the deadline.
 
-##  B. Contributing to the Project
+## B. Contributing to the Project
 
 - Once the project maintainer(s)/mentor(s) have reviewed the issue/assigned you the issue. Start working on the changes.
 
@@ -101,6 +99,7 @@ git checkout -b <your_branch_name>
 ```
 
 **2.** Perfom your desired changes to the code base.
+
 - Make sure that you do not change any code unrelated to the task that you have been assigned
 
 - Ensure that your changes apply to all screensizes
@@ -115,8 +114,7 @@ git checkout -b <your_branch_name>
 
 - Make a small clip or take screenshots before and after making changes.
 
-
-**3.** Track your changes:heavy_check_mark: 
+**3.** Track your changes:heavy_check_mark:
 
 ```
 git add . 
@@ -127,6 +125,7 @@ git add .
 ```
 git commit -m "Relevant message"  (usually title of the pull request)
 ```
+
 - **Make sure to condense your changes into a single commit**.
 
 **5.** Push the committed changes in your feature branch to your remote repo.
@@ -141,12 +140,11 @@ git push -u origin <your_branch_name>
 
 **7.** Then add an appropriate title and description to your pull request that explains your changes and efforts done.
 
-
 **8.** Click on `Create Pull Request`.
 
 <img src="./readme_assets/CreatePR.png" width=600>
 
-> ### Guidelines for raising a pull request:
+> ### Guidelines for raising a pull request
 >
 > - Each pull request should have an appropriate and short title like "Fixed Bug in Experience Page"
 >
@@ -155,6 +153,7 @@ git push -u origin <your_branch_name>
 > - Pull Requests without a description would often not be reviewed. Make sure you describe your intended changes in the description section of the pull request. (Use bullet points and phrases)
 >
 > - Make sure to refer the respective issue in the respective PR using phrases like `Resolves #issue_number` or `Closes #issue_number`.  Here's an example to raise a PR:
+>
 ```
  Fixes #640
 
@@ -185,8 +184,6 @@ git push -u origin <your_branch_name>
 >
 > - Always keep a note of the deadline.
 
-
 **9.** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days.
 
 <p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
-
