@@ -232,6 +232,66 @@ html {
   font-family: Agustina;
   font-size: 30px;
   font-weight: bold;
+  background: linear-gradient(45deg, #9C27B0, #6A1B9A);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(156, 39, 176, 0.3);
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.navbar-brand::before {
+  content: "✨";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand::after {
+  content: "✨";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #E040FB, #AA00FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.navbar-brand:hover::before {
+  opacity: 1;
+  left: -25px;
+  transform: translateY(-50%) rotate(-20deg);
+}
+
+.navbar-brand:hover::after {
+  opacity: 1;
+  right: -25px;
+  transform: translateY(-50%) rotate(20deg);
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: translateY(-50%) scale(0.8); }
+  50% { opacity: 1; transform: translateY(-50%) scale(1.2); }
+}
+
+.navbar-brand:hover::before,
+.navbar-brand:hover::after {
+  animation: sparkle 1s ease-in-out infinite;
 }
 
 .navbar {
@@ -298,9 +358,25 @@ html[light-mode="dark"] {
   box-shadow: 0 0 0;
 }
 
-.dark-theme .navbar-nav .nav-link,
-.dark-theme .navbar-brand {
+.dark-theme .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-theme .navbar-brand {
+  background: linear-gradient(45deg, #CE93D8, #AB47BC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(206, 147, 216, 0.3);
+}
+
+.dark-theme .navbar-brand:hover {
+  background: linear-gradient(45deg, #EA80FC, #E040FB);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+  letter-spacing: 1px;
 }
 
 .dark-theme .nav-link:hover{
