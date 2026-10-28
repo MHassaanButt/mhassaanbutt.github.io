@@ -1,24 +1,37 @@
+# Personal Portfolio
 
-A community maintained open source project aimed at making personal portfolio for researchers, developers and analysts simple, fast and less cumbersome. We make sure you have a full-fledged website to showcase your work while you can spend time on your learning and innovative endeavours.
+Source code for Muhammad Hassaan Farooq Butt’s personal website, featuring professional experience, selected projects, research interests, and contact information.
 
-## A sneak peek into what we have here🙈
+**Website:** [mhassaanbutt.github.io](https://mhassaanbutt.github.io/)
 
-### Home Page
+## Overview
 
-<p align="center"><img src="./readme_assets/Home_Page.gif"></p>
+A responsive portfolio built with HTML, CSS, and JavaScript and hosted on GitHub Pages. The site includes a dark programmer-inspired theme, mobile navigation, and interactive profile introductions.
 
-### Experience Page
+## Run locally
 
-<p align="center"><img src="./readme_assets/Experience_Page.gif"></p>
+Clone the repository and start a local web server:
 
-### Project Page
+```bash
+git clone https://github.com/MHassaanButt/mhassaanbutt.github.io.git
+cd mhassaanbutt.github.io
+python3 -m http.server 8000
+```
 
-<p align="center"><img src="./readme_assets/Project_Page.gif"></p>
+Open [localhost:8000](http://localhost:8000) in your browser. No build step is required.
 
-### Research Page
+## Main files
 
-<p align="center"><img src="./readme_assets/Research_Page.gif"></p>
+- `index.html` — page content and layout.
+- `assets/css/portfolio.css` — base styles and responsive layouts.
+- `assets/css/coder.css` — programmer theme and visual refinements.
+- `assets/js/portfolio.js` — navigation and profile interactions.
+- `assets/images/` — portrait, favicon, and image assets.
 
-### Education Page
+## Updates
 
-<p align="center"><img src="./readme_assets/Education_Page.gif"></p>
+Edit the relevant HTML, CSS, or JavaScript files and preview the changes locally. Updates published to the `master` branch are deployed through GitHub Pages.
+
+## License
+
+See [LICENSE](LICENSE) for the repository’s license terms.
