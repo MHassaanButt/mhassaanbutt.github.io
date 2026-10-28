@@ -4,3 +4,26 @@ body{background:var(--paper)}.site-header{background:rgba(12,17,20,.95)}.brand-m
 .hero-lede{margin-top:18px}.hero-copy,.hero-photo-wrap,.project-card,.experience-main{min-width:0}.hero-links{flex-wrap:wrap}.terminal-body{overflow-wrap:anywhere}.hero-photo img{max-width:100%}.project-link{min-height:44px}.project-type{line-height:1.5}.hero-bottom{flex-wrap:wrap}.hero-photo figcaption{line-height:1.6}.project-card:hover{border-color:#7ca778}.button:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid #a7ed8d;outline-offset:5px}.audience-switch button{cursor:pointer}.experience-date,.experience-location,.project-type,.project-tags span,.experience-tags span{font-size:11px}@media(max-width:380px){.hero h1{font-size:38px}.hero-bottom{display:block}.hero-bottom>span{display:block;margin:5px 0}.terminal-body{font-size:10px}.project-top{align-items:flex-start}.project-type{max-width:170px}.footer-inner{display:flex;flex-wrap:wrap}}
 
 .contact-email{line-height:2;overflow-wrap:anywhere}.contact-email>span{font-size:11px;color:#9badab}.contact-email a:hover{color:var(--blue)}.project-mark svg{display:block}
+
+/* Expand the composition on large desktop viewports. */
+@media(min-width:1500px){
+  .shell{width:min(1760px,calc(100% - 12vw))}
+  .nav{height:88px}.brand{font-size:17px}.nav-links{font-size:15px;gap:36px}
+  .hero{grid-template-columns:1.2fr .8fr;gap:clamp(60px,6vw,130px);padding-top:78px;padding-bottom:32px}
+  .hero-copy{max-width:790px}.hero h1{font-size:clamp(76px,4.5vw,96px);max-width:850px}
+  .hero-lede{font-size:20px;max-width:710px;min-height:96px}
+  .hero-photo-wrap{width:min(100%,460px)}.hero-photo{width:100%}.hero-photo img{height:clamp(390px,24vw,470px)}
+  .hero-photo figcaption{font-size:13px}.photo-index{font-size:12px}
+  .eyebrow{font-size:12px}.hero-links{font-size:15px}.hero-bottom{font-size:14px}
+  .button{font-size:14px;min-height:54px;padding-inline:23px}.audience-switch button{font-size:13px;padding-inline:17px}
+  .terminal{max-width:650px}.terminal-bar{font-size:12px}.terminal-body{font-size:14px}
+  .intro-inner p{max-width:1120px;font-size:26px}.intro-inner{min-height:145px}
+  .about-section,.skills-section{grid-template-columns:.8fr 1.2fr;gap:110px}
+  .about-copy p,.research-copy p{font-size:17px}.about-copy .lead-copy{font-size:23px}
+  .section-note{font-size:16px;max-width:430px}.project-card{padding:32px;min-height:420px}
+  .project-card-copy{max-width:620px}.project-summary{font-size:19px}.project-detail{font-size:16px;max-width:590px}
+  .focus-item p,.experience-main p,.skills-list p{font-size:15px}.focus-item h3{font-size:16px}
+  .experience-main h3{font-size:19px}.experience-row{grid-template-columns:155px 1fr 165px;gap:32px}
+  .experience-main p{max-width:1000px}.experience-location,.experience-date{font-size:13px}
+  .contact-inner>p{font-size:18px;max-width:720px}.footer-inner{font-size:12px}
+}
