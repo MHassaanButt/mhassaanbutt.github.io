@@ -17,6 +17,13 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/portfolio.css">
   <link rel="stylesheet" href="assets/css/coder.css">
+  <style>
+    .project-actions{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;min-width:0}
+    .repository-note{flex-basis:100%;font:11px/1.6 var(--mono);color:var(--muted)}
+    .streamtree-card .project-bottom{align-items:flex-start;flex-wrap:wrap;gap:16px}
+    .streamtree-card .project-tags{max-width:none}
+    @media(min-width:651px){.streamtree-card{grid-column:1/-1}.streamtree-card .project-card-copy{max-width:900px}.streamtree-card .project-detail{max-width:850px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -58,8 +65,13 @@
     </section>
 
     <section class="projects-section" id="projects"><div class="shell section">
-      <div class="section-topline"><div><div class="eyebrow">Selected projects</div><h2>Built to be<br><span>useful.</span></h2></div><p class="section-note">Open-source applications for local knowledge retrieval and multimodal image understanding.</p></div>
+      <div class="section-topline"><div><div class="eyebrow">Selected projects</div><h2>Built to be<br><span>useful.</span></h2></div><p class="section-note">Selected work in streaming 3D vision, local knowledge retrieval, and multimodal image understanding.</p></div>
       <div class="project-grid">
+        <article class="project-card streamtree-card">
+          <div class="project-top"><span class="project-mark"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-6 7h3l-5 7h7v4h2v-4h7l-5-7h3Z"/></svg></span><span class="project-type">INDEPENDENT PROJECT <i>·</i> 3D VISION</span></div>
+          <div class="project-card-copy"><h3>StreamTree</h3><p class="project-summary">Streaming individual-tree segmentation that processes forest LiDAR strip by strip as scan data arrives.</p><p class="project-detail">Adapted pretrained ForestFormer3D with incremental processing, context windows, and tree merging—without retraining. Achieved 87.1 F1 across 28 test plots (90.7 offline), with a median processing time of 0.31 s per 4 m strip on one RTX 8000 GPU, using simulated scan replay.</p></div>
+          <div class="project-bottom"><div class="project-tags"><span>LiDAR</span><span>3D segmentation</span><span>Streaming inference</span></div><div class="project-actions"><a class="project-link" href="https://mhassaanbutt.github.io/streamtree/" target="_blank" rel="noreferrer">View demo <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/MHassaanButt/streamtree" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><span class="repository-note">Private code · access on request</span></div></div>
+        </article>
         <article class="project-card kommune-card">
           <div class="project-top"><span class="project-mark"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H9l-5 3v-6A7.5 7.5 0 0 1 12.5 4 7.5 7.5 0 0 1 20 11.5Z"/><path d="M8 10h8M8 14h5"/></svg></span><span class="project-type">OPEN SOURCE <i>·</i> LOCAL AI</span></div>
           <div class="project-card-copy"><h3>KommuneBot</h3><p class="project-summary">A local AI assistant that helps people find information from Norwegian municipal sources.</p><p class="project-detail">Built with FastAPI, ChromaDB, and Ollama. Includes Docker deployment for CPU or GPU inference, along with automated evaluation and tests.</p></div>
